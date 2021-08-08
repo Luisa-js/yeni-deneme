@@ -6,7 +6,7 @@ import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import {Redirect} from "react-router-dom";
-import {createJwt} from "../Helpers/jwt-helpers";
+// import {createJwt} from "../Helpers/jwt-helpers";
 
 const axios = require("axios")
 
@@ -34,11 +34,11 @@ class Form extends Component {
     handleSubmit(e) {
         var url = process.env.REACT_APP_WEBHOOK_URL;
         const now = new Date();
-        let unbanInfo = {
-            userId: this.state.user.id,
-            email: this.state.user.email
-        };
-        let unbanUrl = window.location.origin + "/.netlify/functions/unban";
+        // let unbanInfo = {
+        //     userId: this.state.user.id,
+        //     email: this.state.user.email
+        // };
+        // let unbanUrl = window.location.origin + "/.netlify/functions/unban";
         var embed = [{
             title: "Yeni Başvuru Alındı",
             type: "rich",
