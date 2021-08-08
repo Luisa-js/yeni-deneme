@@ -54,7 +54,7 @@ function App() {
                     <Box style={{backgroundImage: `url(${process.env.REACT_APP_BANNER_URL})`}}
                          className={"banner"}>
                         <img alt={title + " Discord Icon"} src={icon} className={"icon"} height={150}/>
-                        <h1>{title} Discord Ban Appeal System</h1>
+                        <h1>HazalHost Başvuru Sistemi</h1>
                     </Box>
                 </Grid>
                 <Switch>
